@@ -34,4 +34,10 @@ a.one:hover {color:#ffcc00;}
   border: 1px solid red;
 }
 
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
 
