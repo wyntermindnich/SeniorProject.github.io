@@ -17,8 +17,8 @@ a.one:hover {color:#ffcc00;}
 }
 
 .header {
-  border: 1px solid red;
   padding: 15px;
+  text-align: center;
 }
 
 .menu {
@@ -31,13 +31,12 @@ a.one:hover {color:#ffcc00;}
   width: 75%;
   float: left;
   padding: 15px;
-  border: 1px solid red;
+
 }
 
 .footer {
   padding: 20px;
   text-align: center;
-  background: #ddd;
 }
 
 
