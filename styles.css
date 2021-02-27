@@ -8,25 +8,30 @@ p {
   color: red;
 }
 
+a.one:link {color:#ff0000;}
+a.one:visited {color:#0000ff;}
+a.one:hover {color:#ffcc00;}
+
 * {
   box-sizing: border-box;
 }
 
 .header {
   border: 1px solid red;
-	padding: 15px;
+  padding: 15px;
 }
 
 .menu {
-	width: 25%;
-	float: left;
+  width: 25%;
+  float: left;
   padding: 15px;
-	border: 1px solid red;
 }
 
 .main {
-	width: 75%;
-	float: left;
-	padding: 15px;
-	border: 1px solid red;
+  width: 75%;
+  float: left;
+  padding: 15px;
+  border: 1px solid red;
 }
+
+
