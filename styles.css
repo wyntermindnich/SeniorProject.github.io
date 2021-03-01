@@ -35,8 +35,12 @@ a.one:hover {color:#ffcc00;}
 }
 
 .footer {
-  padding: 20px;
-  text-align: center;
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   color: red;
+   text-align: center;
 }
 
 
