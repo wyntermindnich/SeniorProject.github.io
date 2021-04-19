@@ -1,20 +1,6 @@
 body {
   background-color: powderblue;
 }
-h1 {
-  color: blue;
-}
-p {
-  color: red;
-}
-
-a.one:link {color:#ff0000;}
-a.one:visited {color:#0000ff;}
-a.one:hover {color:#ffcc00;}
-
-* {
-  box-sizing: border-box;
-}
 
 .header {
   padding: 15px;
