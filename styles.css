@@ -2,6 +2,10 @@ body {
   background-color: powderblue;
 }
 
+p {
+  color: green;
+}
+
 .header {
   padding: 15px;
   text-align: center;
