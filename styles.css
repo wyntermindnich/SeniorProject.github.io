@@ -19,6 +19,11 @@ h2 {
   text-align: center;
 }
 
+.menu {
+  width: 25%;
+  float: left;
+  padding: 15px;
+}
 
 .main {
   position: fixed;
