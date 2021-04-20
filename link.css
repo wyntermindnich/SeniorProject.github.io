@@ -1,10 +1,4 @@
 
-.menu {
-  width: 25%;
-  float: left;
-  padding: 15px;
-}
-
 ul {  list-style-type: circle; }
 li { display: list-item; }
 
