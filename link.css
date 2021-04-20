@@ -1,5 +1,10 @@
 
-ul {  list-style-type: circle; }
+ul {  
+  background: #3399ff;
+  padding: 20px;
+  list-style-type: circle; 
+}
+
 li { display: list-item; }
 
 a.one:link {color:#ff0000;}
