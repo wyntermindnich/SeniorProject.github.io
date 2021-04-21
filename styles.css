@@ -21,7 +21,8 @@ h2 {
 
 .menu {
   width: 25%;
-  padding: 15px;
+  padding: 25px;
+  box-sizing: border-box;
 }
 
 .main {
