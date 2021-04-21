@@ -1,6 +1,12 @@
 ul {  list-style-type: circle; }
+
 li { display: list-item; }
 
+ul.demo {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
 
 a.one:link {color:#ff0000;}
 a.one:visited {color:#0000ff;}
