@@ -67,6 +67,32 @@ Displays a question with for possible clickable answers -->
     <button type='button' onclick='displayAnswer1()' style='width: 100px; height: 40px; border-radius: 3px; background-color: lightblue; font-weight: 700;'>Submit</button>
 </div>
 <a id='showanswer1'></a>
+	
+<!--true false-->
+<div class="main" style='transform: scale(0.65); position: relative; top: -100px;'>
+<h3> True False this is my senior project </h3>	
+    <p>Pick true or false</p>
+    <hr/>
+   
+    <div id='block-21' style='padding: 10px;'>
+   <label for='option-21' style=' padding: 5px; font-size: 2.5rem;'>
+        <input type='radio' name='option' value='TRUE' id='option-21' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' /> 
+        TRUE</label>
+        <span id='result-21'></span>
+    </div>
+    <hr/>
+    
+    <div id='block-22' style='padding: 10px;'>
+    <label for='option-22' style=' padding: 5px; font-size: 2.5rem;'>
+        <input type='radio' name='option' value='FALSE' id='option-22' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' /> 				
+        FALSE</label>
+        <span id='result-22'></span>
+    </div>	
+    <hr/>
+    <button type='button' onclick='displayAnswer1()' style='width: 100px; height: 40px; border-radius: 3px; background-color: lightblue; font-weight: 700;'>Submit</button>
+</div>
+<a id='showanswer1'></a>
+	
 <script>
     
  //    The function evaluates the answer and displays result
@@ -94,6 +120,23 @@ Displays a question with for possible clickable answers -->
         document.getElementById('block-14').style.border = '3px solid red'
         document.getElementById('result-14').style.color = 'red'
 		document.getElementById('result-14').innerHTML = 'Incorrect!'
+	
+        }
+     }
+	
+ //    The function evaluates the answer and displays result
+	function displayAnswer1() {
+    	if (document.getElementById('option-21').checked) {
+      
+        document.getElementById('block-21').style.border = '3px solid limegreen'
+        document.getElementById('result-21').style.color = 'limegreen'
+		document.getElementById('result-21').innerHTML = 'Correct!'
+        
+        } 
+        if (document.getElementById('option-22').checked) {
+        document.getElementById('block-22').style.border = '3px solid red'
+        document.getElementById('result-22').style.color = 'red'
+		document.getElementById('result-22').innerHTML = 'Incorrect!'
 	
         }
      }
