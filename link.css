@@ -1,3 +1,4 @@
+
 ul {  list-style-type: circle; }
 
 li { display: list-item; }
@@ -7,6 +8,12 @@ ul.demo {
   margin: 10;
   padding-top: 50px;
   padding-bottom: 50px;
+}
+
+.padded {
+    padding-top: 3px;
+    height:22px /* original height (25px) minus padding-top (3px) */
+    text-align: center;
 }
 
 a.one:link {color:#ff0000;}
