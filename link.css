@@ -17,3 +17,14 @@ hr.rounded {
   border-top: 9px solid #0a2e47;
   border-radius: 15px;
 }
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 5px;
+}
+th {
+  text-align: left;
+}
