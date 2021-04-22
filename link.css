@@ -23,8 +23,8 @@ table, th, td {
   border-collapse: collapse;
 }
 th, td {
-  padding: 5px;
+  padding: 8px;
 }
 th {
-  text-align: left;
+  text-align: center;
 }
