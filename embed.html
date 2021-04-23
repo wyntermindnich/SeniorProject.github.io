@@ -124,19 +124,19 @@ Displays a question with for possible clickable answers -->
     <hr/>
     <button type='button' onclick='displayAnswer1()' style='width: 100px; height: 40px; border-radius: 3px; background-color: lightblue; font-weight: 700;'>Submit</button>
 </div>
-<a id='showanswer1'></a>
+<a id='showanswer2'></a>
 <script>
 	 //    question 2
-	function displayAnswer1() {
+	function displayAnswer2() {
     	if (document.getElementById('option-21').checked) {
       
-        document.getElementById('block-21').style.border = '3px solid limegreen'
+        document.getElementById('block-21').style.border = '3px solid red'
         document.getElementById('result-21').style.color = 'red'
 		document.getElementById('result-21').innerHTML = 'Incorrect!'
         
         } 
         if (document.getElementById('option-22').checked) {
-        document.getElementById('block-22').style.border = '3px solid red'
+        document.getElementById('block-22').style.border = '3px solid limegreen'
         document.getElementById('result-22').style.color = 'limegreen'
 		document.getElementById('result-22').innerHTML = 'Correct!'
 		}
@@ -184,13 +184,13 @@ Displays a question with for possible clickable answers -->
     <hr/>
     <button type='button' onclick='displayAnswer1()' style='width: 100px; height: 40px; border-radius: 3px; background-color: lightblue; font-weight: 700;'>Submit</button>
 </div>
-<a id='showanswer1'></a>
+<a id='showanswer3'></a>
 <script>
 //    question 3
-	function displayAnswer1() {
+	function displayAnswer3() {
     	if (document.getElementById('option-31').checked) {
       
-        document.getElementById('block-31').style.border = '3px solid limegreen'
+        document.getElementById('block-31').style.border = '3px solid red'
         document.getElementById('result-31').style.color = 'red'
 		document.getElementById('result-31').innerHTML = 'Incorrect!'
         
@@ -202,7 +202,7 @@ Displays a question with for possible clickable answers -->
 
  		}
         if (document.getElementById('option-33').checked) {
-        document.getElementById('block-33').style.border = '3px solid red'
+        document.getElementById('block-33').style.border = '3px solid limegreen'
         document.getElementById('result-33').style.color = 'limegreen'
 		document.getElementById('result-33').innerHTML = 'Correct!'
 	
