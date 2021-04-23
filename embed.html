@@ -67,6 +67,38 @@ Displays a question with for possible clickable answers -->
     <button type='button' onclick='displayAnswer1()' style='width: 100px; height: 40px; border-radius: 3px; background-color: lightblue; font-weight: 700;'>Submit</button>
 </div>
 <a id='showanswer1'></a>
+<script>
+    
+ //    question 1
+	function displayAnswer1() {
+    	if (document.getElementById('option-11').checked) {
+      
+        document.getElementById('block-11').style.border = '3px solid limegreen'
+        document.getElementById('result-11').style.color = 'limegreen'
+		document.getElementById('result-11').innerHTML = 'Correct!'
+        
+        } 
+        if (document.getElementById('option-12').checked) {
+        document.getElementById('block-12').style.border = '3px solid red'
+        document.getElementById('result-12').style.color = 'red'
+		document.getElementById('result-12').innerHTML = 'Incorrect!'
+
+ 		}
+        if (document.getElementById('option-13').checked) {
+        document.getElementById('block-13').style.border = '3px solid red'
+        document.getElementById('result-13').style.color = 'red'
+		document.getElementById('result-13').innerHTML = 'Incorrect!'
+	
+        }
+        if (document.getElementById('option-14').checked) {
+        document.getElementById('block-14').style.border = '3px solid red'
+        document.getElementById('result-14').style.color = 'red'
+		document.getElementById('result-14').innerHTML = 'Incorrect!'
+	
+        }
+     }
+	
+</script>
 	
 <!--true false-->
 <div class="main" style='transform: scale(0.65); position: relative; top: -100px;'>
@@ -92,6 +124,25 @@ Displays a question with for possible clickable answers -->
     <button type='button' onclick='displayAnswer1()' style='width: 100px; height: 40px; border-radius: 3px; background-color: lightblue; font-weight: 700;'>Submit</button>
 </div>
 <a id='showanswer1'></a>
+<script>
+	 //    question 2
+	function displayAnswer1() {
+    	if (document.getElementById('option-21').checked) {
+      
+        document.getElementById('block-21').style.border = '3px solid limegreen'
+        document.getElementById('result-21').style.color = 'red'
+		document.getElementById('result-21').innerHTML = 'Incorrect!'
+        
+        } 
+        if (document.getElementById('option-22').checked) {
+        document.getElementById('block-22').style.border = '3px solid red'
+        document.getElementById('result-22').style.color = 'limegreen'
+		document.getElementById('result-22').innerHTML = 'Correct!'
+		}
+	}
+	
+</script>
+	
 	
 <!--quiz 3-->	
 <div class="main" style='transform: scale(0.65); position: relative; top: -100px;'>
@@ -133,82 +184,8 @@ Displays a question with for possible clickable answers -->
     <button type='button' onclick='displayAnswer1()' style='width: 100px; height: 40px; border-radius: 3px; background-color: lightblue; font-weight: 700;'>Submit</button>
 </div>
 <a id='showanswer1'></a>
-	
-<!--quiz 4-->	
-<div class="main" style='transform: scale(0.65); position: relative; top: -100px;'>
-<h3>True or False: A tree is made up of parent and child nodes. </h3>	
-    <p>Choose 1 answer</p>
-    <hr/>
-   
-    <div id='block-41' style='padding: 10px;'>
-   <label for='option-41' style=' padding: 5px; font-size: 2.5rem;'>
-        <input type='radio' name='option' value='TRUE' id='option-41' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' /> 
-        TRUE</label>
-        <span id='result-41'></span>
-    </div>
-    <hr/>
-    
-    <div id='block-42' style='padding: 10px;'>
-    <label for='option-42' style=' padding: 5px; font-size: 2.5rem;'>
-        <input type='radio' name='option' value='FALSE' id='option-42' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' /> 				
-        FALSE</label>
-        <span id='result-42'></span>
-    </div>	
-<hr/>
-    </div>	
-    <hr/>
-    <button type='button' onclick='displayAnswer1()' style='width: 100px; height: 40px; border-radius: 3px; background-color: lightblue; font-weight: 700;'>Submit</button>
-</div>
-<a id='showanswer1'></a>
-	
 <script>
-    
- //    question 1
-	function displayAnswer1() {
-    	if (document.getElementById('option-11').checked) {
-      
-        document.getElementById('block-11').style.border = '3px solid limegreen'
-        document.getElementById('result-11').style.color = 'limegreen'
-		document.getElementById('result-11').innerHTML = 'Correct!'
-        
-        } 
-        if (document.getElementById('option-12').checked) {
-        document.getElementById('block-12').style.border = '3px solid red'
-        document.getElementById('result-12').style.color = 'red'
-		document.getElementById('result-12').innerHTML = 'Incorrect!'
-
- 		}
-        if (document.getElementById('option-13').checked) {
-        document.getElementById('block-13').style.border = '3px solid red'
-        document.getElementById('result-13').style.color = 'red'
-		document.getElementById('result-13').innerHTML = 'Incorrect!'
-	
-        }
-        if (document.getElementById('option-14').checked) {
-        document.getElementById('block-14').style.border = '3px solid red'
-        document.getElementById('result-14').style.color = 'red'
-		document.getElementById('result-14').innerHTML = 'Incorrect!'
-	
-        }
-     }
-	
- //    question 2
-	function displayAnswer1() {
-    	if (document.getElementById('option-21').checked) {
-      
-        document.getElementById('block-21').style.border = '3px solid limegreen'
-        document.getElementById('result-21').style.color = 'red'
-		document.getElementById('result-21').innerHTML = 'Incorrect!'
-        
-        } 
-        if (document.getElementById('option-22').checked) {
-        document.getElementById('block-22').style.border = '3px solid red'
-        document.getElementById('result-22').style.color = 'limegreen'
-		document.getElementById('result-22').innerHTML = 'Correct!'
-		}
-	}
-	
- //    question 3
+//    question 3
 	function displayAnswer1() {
     	if (document.getElementById('option-31').checked) {
       
@@ -237,7 +214,38 @@ Displays a question with for possible clickable answers -->
 	}
      }
 		
- //    question 4
+
+
+</script>
+	
+<!--quiz 4-->	
+<div class="main" style='transform: scale(0.65); position: relative; top: -100px;'>
+<h3>True or False: A tree is made up of parent and child nodes. </h3>	
+    <p>Choose 1 answer</p>
+    <hr/>
+   
+    <div id='block-41' style='padding: 10px;'>
+   <label for='option-41' style=' padding: 5px; font-size: 2.5rem;'>
+        <input type='radio' name='option' value='TRUE' id='option-41' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' /> 
+        TRUE</label>
+        <span id='result-41'></span>
+    </div>
+    <hr/>
+    
+    <div id='block-42' style='padding: 10px;'>
+    <label for='option-42' style=' padding: 5px; font-size: 2.5rem;'>
+        <input type='radio' name='option' value='FALSE' id='option-42' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' /> 				
+        FALSE</label>
+        <span id='result-42'></span>
+    </div>	
+<hr/>
+    </div>	
+    <hr/>
+    <button type='button' onclick='displayAnswer1()' style='width: 100px; height: 40px; border-radius: 3px; background-color: lightblue; font-weight: 700;'>Submit</button>
+</div>
+<a id='showanswer1'></a>
+<script>
+	 //    question 4
 	function displayAnswer1() {
     	if (document.getElementById('option-41').checked) {
       
@@ -252,8 +260,8 @@ Displays a question with for possible clickable answers -->
 		document.getElementById('result-42').innerHTML = 'Incorrect!'
 	}
 	}
+</script> 
 
-</script>
 
 <!--footer-->
 <div class="footer">
