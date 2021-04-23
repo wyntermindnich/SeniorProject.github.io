@@ -91,17 +91,20 @@ The <a class="one" href="http://www.asciitable.com/" target="_self"> ASCII </a> 
 <p>  Brancing staments are used to preform different actions for different conditions. The condition of the stament is a type of 
 	comparison that will allow to code to enter the branch or continue on. Commonly boolean (table show below) logic is used for condition comparions.
 	Branching stsmaent can be as long as you want or as short as one condition, </p>
-			<ul> <li> If - else </li> </ul>
+			<ul> <li> If - else </li>
 <p> Is a condition check to then let the code continue down that branch or move onto the next block of code. </p>
 
-<pre> if - else syntax <code> 
+<pre> 
+if - else syntax <code> 
 if (condition) {
   // block of code to be executed if the condition is true
 } else {
   // block of code to be executed if the condition is false
-} </pre></code
-			<ul> <li> Switch </li> </ul>
-<p> Switch staments work by chooses a case to evaluate, instead of compatison to enter that branch the data type just needs to meep a requrment made by the programmer. </p>
+} 
+</pre></code>
+			 <li> Switch </li> </ul>
+<p> Switch staments work by chooses a case to evaluate, instead of compatison to enter that branch the data type just needs to meep a requrment 
+	made by the programmer. </p>
 <pre> switch syntax <code>
 switch ( variable )
 {
@@ -140,7 +143,15 @@ break;
 <p> A loop is a programming stucture that repeats code oinside the loop till the code exis the loop. The way to exit the 
 	loop is to have a condition for a vatiable to meet. The two most common loops are while and for. </p>
 			<ul> <li> While </li> </ul>
+<p> Used a singular condition to stope the loop. </p>
+<pre> <code> 
+while (i < 5) {
+  System.out.println(i);
+  i++;
+}
+</code>  </code> prints → 0, 1, 2, 3, 4  </pre>
 			<ul> <li> For </li> </ul>
+<p> Set number of iterations decined in loop structure. </p>
 <pre> <code>    
 for (int i = 0; i < 5; i++) {
       System.out.println(i);
