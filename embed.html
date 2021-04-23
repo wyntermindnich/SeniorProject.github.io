@@ -94,8 +94,49 @@ Displays a question with for possible clickable answers -->
 <a id='showanswer1'></a>
 	
 <script>
+	
+<!--quiz 3-->	
+<div class="main" style='transform: scale(0.65); position: relative; top: -100px;'>
+<h3>What data type does this sentance describe> "A string is a collective of characters, it is the best way to represent words and sentances." </h3>	
+    <p>Choose 1 answer</p>
+    <hr/>
+   
+    <div id='block-31' style='padding: 10px;'>
+   <label for='option-31' style=' padding: 5px; font-size: 2.5rem;'>
+        <input type='radio' name='option' value='int' id='option-31' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' /> 
+        FIFO</label>
+        <span id='result-31'></span>
+    </div>
+    <hr/>
     
- //    The function evaluates the answer and displays result
+    <div id='block-32' style='padding: 10px;'>
+    <label for='option-32' style=' padding: 5px; font-size: 2.5rem;'>
+        <input type='radio' name='option' value='string' id='option-12' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' /> 				
+        LIFO</label>
+        <span id='result-32'></span>
+    </div>	
+    <hr/>
+     
+    <div id='block-33' style='padding: 10px;'>
+    <label for='option-33' style=' padding: 5px; font-size: 2.5rem;'>
+        <input type='radio' name='option' value='char' id='option-33' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' /> 				
+        Ramdomized</label>
+        <span id='result-33'></span>
+    </div>
+    <hr/>
+     
+    <div id='block-34' style='padding: 10px;'>
+        <label for='option-34' style=' padding: 5px; font-size: 2.5rem;'>
+         <input type='radio' name='option' value='float' id='option-34' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' /> 				
+         None</label>
+        <span id='result-34'></span>
+    </div>
+    <hr/>
+    <button type='button' onclick='displayAnswer1()' style='width: 100px; height: 40px; border-radius: 3px; background-color: lightblue; font-weight: 700;'>Submit</button>
+</div>
+<a id='showanswer1'></a>
+    
+ //    question 1
 	function displayAnswer1() {
     	if (document.getElementById('option-11').checked) {
       
@@ -124,7 +165,7 @@ Displays a question with for possible clickable answers -->
         }
      }
 	
- //    The function evaluates the answer and displays result
+ //    question 2
 	function displayAnswer1() {
     	if (document.getElementById('option-21').checked) {
       
@@ -138,7 +179,33 @@ Displays a question with for possible clickable answers -->
         document.getElementById('result-22').style.color = 'red'
 		document.getElementById('result-22').innerHTML = 'Incorrect!'
 	
+ //    question 3
+	function displayAnswer1() {
+    	if (document.getElementById('option-31').checked) {
+      
+        document.getElementById('block-31').style.border = '3px solid limegreen'
+        document.getElementById('result-31').style.color = 'limegreen'
+		document.getElementById('result-31').innerHTML = 'Incorrect!'
+        
+        } 
+        if (document.getElementById('option-32').checked) {
+        document.getElementById('block-32').style.border = '3px solid red'
+        document.getElementById('result-32').style.color = 'red'
+		document.getElementById('result-32').innerHTML = 'Incorrect!'
+
+ 		}
+        if (document.getElementById('option-33').checked) {
+        document.getElementById('block-33').style.border = '3px solid red'
+        document.getElementById('result-33').style.color = 'red'
+		document.getElementById('result-33').innerHTML = 'Correct!'
+	
         }
+        if (document.getElementById('option-34').checked) {
+        document.getElementById('block-34').style.border = '3px solid red'
+        document.getElementById('result-34').style.color = 'red'
+		document.getElementById('result-34').innerHTML = 'Incorrect!'
+	
+	}
      }
 
 </script>
