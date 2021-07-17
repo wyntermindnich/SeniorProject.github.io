@@ -7,10 +7,12 @@ Displays a question with for possible clickable answers -->
 		<title> Senior_Project </title>
 		<link rel="stylesheet" href="styles.css">
 		<link rel="stylesheet" href="link.css">
+		<link rel="stylesheet" href="steez.css">
 </head>
 <body> 
 
 <!--header-->
+<div id="main"><!-- open main div -->
 <div class="header">
 <h1> Senior Project Website. </h1>
 	<h2> Quiz </h2>
@@ -28,199 +30,74 @@ Displays a question with for possible clickable answers -->
 </ul>
 </div>
 
-<!--quiz question 1-->	
-<div class="main" style='transform: scale(0.65); position: relative; top: -100px;'>
-<h3>What is the sorting order for the data struacture Queue</h3>	
-    <p>Choose 1 answer</p>
-    <hr/>
-   
-    <div id='block-11' style='padding: 10px;'>
-   <label for='option-11' style=' padding: 5px; font-size: 2.5rem;'>
-        <input type='radio' name='option' value='FIFO' id='option-11' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' /> 
-        FIFO</label>
-        <span id='result-11'></span>
-    </div>
-    <hr/>
-    
-    <div id='block-12' style='padding: 10px;'>
-    <label for='option-12' style=' padding: 5px; font-size: 2.5rem;'>
-        <input type='radio' name='option' value='LIFO' id='option-12' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' /> 				
-        LIFO</label>
-        <span id='result-12'></span>
-    </div>	
-    <hr/>
-     
-    <div id='block-13' style='padding: 10px;'>
-    <label for='option-13' style=' padding: 5px; font-size: 2.5rem;'>
-        <input type='radio' name='option' value='Ramdomized' id='option-13' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' /> 				
-        Ramdomized</label>
-        <span id='result-13'></span>
-    </div>
-    <hr/>
-     
-    <div id='block-14' style='padding: 10px;'>
-        <label for='option-14' style=' padding: 5px; font-size: 2.5rem;'>
-         <input type='radio' name='option' value='None' id='option-14' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' /> 				
-         None</label>
-        <span id='result-14'></span>
-    </div>
-    <hr/>
-    <button type='button' onclick='displayAnswer1()' style='width: 100px; height: 40px; border-radius: 3px; background-color: lightblue; font-weight: 700;'>Submit</button>
-</div>
-<a id='showanswer1'></a>
-<script>
-    
- //    question 1
-	function displayAnswer1() {
-    	if (document.getElementById('option-11').checked) {
-      
-        document.getElementById('block-11').style.border = '3px solid limegreen'
-        document.getElementById('result-11').style.color = 'limegreen'
-		document.getElementById('result-11').innerHTML = 'Correct!'
-        
-        } 
-        if (document.getElementById('option-12').checked) {
-        document.getElementById('block-12').style.border = '3px solid red'
-        document.getElementById('result-12').style.color = 'red'
-		document.getElementById('result-12').innerHTML = 'Incorrect!'
+<form id="form1">
 
- 		}
-        if (document.getElementById('option-13').checked) {
-        document.getElementById('block-13').style.border = '3px solid red'
-        document.getElementById('result-13').style.color = 'red'
-		document.getElementById('result-13').innerHTML = 'Incorrect!'
-	
-        }
-        if (document.getElementById('option-14').checked) {
-        document.getElementById('block-14').style.border = '3px solid red'
-        document.getElementById('result-14').style.color = 'red'
-		document.getElementById('result-14').innerHTML = 'Incorrect!'
-	
-        }
-     }
-	
-</script>
-	
-<!--true false-->
-<div class="main" style='transform: scale(0.65); position: relative; top: -100px;'>
-<h3> True or False: The ASCII stands for American Standard Code for Information Intelligence </h3>	
-    <p>Pick true or false</p>
-    <hr/>
-   
-    <div id='block-21' style='padding: 10px;'>
-   <label for='option-21' style=' padding: 5px; font-size: 2.5rem;'>
-        <input type='radio' name='option' value='TRUE' id='option-21' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' /> 
-        TRUE</label>
-        <span id='result-21'></span>
-    </div>
-    <hr/>
-    
-    <div id='block-22' style='padding: 10px;'>
-    <label for='option-22' style=' padding: 5px; font-size: 2.5rem;'>
-        <input type='radio' name='option' value='FALSE' id='option-22' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' /> 				
-        FALSE</label>
-        <span id='result-22'></span>
-    </div>	
-    <hr/>
-    <button type='button' onclick='displayAnswer1()' style='width: 100px; height: 40px; border-radius: 3px; background-color: lightblue; font-weight: 700;'>Submit</button>
-</div>
-<a id='showanswer2'></a>
-<script>
-	 //    question 2
-	function displayAnswer2() {
-    	if (document.getElementById('option-21').checked) {
-      
-        document.getElementById('block-21').style.border = '3px solid red'
-        document.getElementById('result-21').style.color = 'red'
-		document.getElementById('result-21').innerHTML = 'Incorrect!'
-        
-        } 
-        if (document.getElementById('option-22').checked) {
-        document.getElementById('block-22').style.border = '3px solid limegreen'
-        document.getElementById('result-22').style.color = 'limegreen'
-		document.getElementById('result-22').innerHTML = 'Correct!'
-		}
-	}
-	
-</script>
-	
-	
-<!--quiz 3-->	
-<div class="main" style='transform: scale(0.65); position: relative; top: -100px;'>
-<h3>What data type does this sentance describe> "A string is a collective of characters, it is the best way to represent words and sentances." </h3>	
-    <p>Choose 1 answer</p>
-    <hr/>
-   
-    <div id='block-31' style='padding: 10px;'>
-   <label for='option-31' style=' padding: 5px; font-size: 2.5rem;'>
-        <input type='radio' name='option' value='int' id='option-31' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' /> 
-        int</label>
-        <span id='result-31'></span>
-    </div>
-    <hr/>
-    
-    <div id='block-32' style='padding: 10px;'>
-    <label for='option-32' style=' padding: 5px; font-size: 2.5rem;'>
-        <input type='radio' name='option' value='string' id='option-32' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' /> 				
-        string</label>
-        <span id='result-32'></span>
-    </div>	
-    <hr/>
-     
-    <div id='block-33' style='padding: 10px;'>
-    <label for='option-33' style=' padding: 5px; font-size: 2.5rem;'>
-        <input type='radio' name='option' value='char' id='option-33' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' /> 				
-        char</label>
-        <span id='result-33'></span>
-    </div>
-    <hr/>
-     
-    <div id='block-34' style='padding: 10px;'>
-        <label for='option-34' style=' padding: 5px; font-size: 2.5rem;'>
-         <input type='radio' name='option' value='float' id='option-34' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' /> 				
-         float</label>
-        <span id='result-34'></span>
-    </div>
-    <hr/>
-    <button type='button' onclick='displayAnswer1()' style='width: 100px; height: 40px; border-radius: 3px; background-color: lightblue; font-weight: 700;'>Submit</button>
-</div>
-<a id='showanswer3'></a>
-<script>
-//    question 3
-	function displayAnswer3() {
-    	if (document.getElementById('option-31').checked) {
-      
-        document.getElementById('block-31').style.border = '3px solid red'
-        document.getElementById('result-31').style.color = 'red'
-		document.getElementById('result-31').innerHTML = 'Incorrect!'
-        
-        } 
-        if (document.getElementById('option-32').checked) {
-        document.getElementById('block-32').style.border = '3px solid red'
-        document.getElementById('result-32').style.color = 'red'
-		document.getElementById('result-32').innerHTML = 'Incorrect!'
+<h2>Which is the best description of a variable?</h2>
+<label for="var_string"><input type="radio" name="variable" value="0" id="var_string" />Identifies a portion of a string.</label>
+<label for="var_join"><input type="radio" name="variable" value="0" id="var_join" />A method to join strings.</label>
+<label for="var_info"><input type="radio" name="variable" value="25" id="var_info" />Allows you to store information so it can be reused throughout the program</label>
+<label for="var_condition"><input type="radio" name="variable" value="0" id="var_condition"/>Allows you to make a decision based on a condition.</label>
 
- 		}
-        if (document.getElementById('option-33').checked) {
-        document.getElementById('block-33').style.border = '3px solid limegreen'
-        document.getElementById('result-33').style.color = 'limegreen'
-		document.getElementById('result-33').innerHTML = 'Correct!'
-	
-        }
-        if (document.getElementById('option-34').checked) {
-        document.getElementById('block-34').style.border = '3px solid red'
-        document.getElementById('result-34').style.color = 'red'
-		document.getElementById('result-34').innerHTML = 'Incorrect!'
-	
-	}
-     }
-		
+<h2>Which is the best description of the substring method?</h2>
+<label for="sub_string"><input type="radio" name="sub" value="25" id="sub_string"/>Identifies a portion of a string.</label>
+<label for="sub_join"><input type="radio" name="sub" value="0" id="sub_join"/>A method to join strings.</label>
+<label for="sub_info"><input type="radio" name="sub" value="0" id="sub_info" />Allows you to store information so it can be reused throughout the program</label>
+<label for="sub_condition"><input type="radio" name="sub" value="0" id="sub_condition" />Allows you to make a decision based on a condition.</label>
 
+<h2>Which is the best description of concatenation?</h2>
+<label for="cat_string"><input type="radio" name="con" value="0" id="cat_string" />Identifies a portion of a string.</label>
+<label for="cat_join"><input type="radio" name="con" value="25" id="cat_join" />A method to join strings.</label>
+<label for="cat_info"><input type="radio" name="con" value="0" id="cat_info" />Allows you to store information so it can be reused throughout the program</label>
+<label for="cat_condition"><input type="radio" name="con" value="0" id="cat_condition" />Allows you to make a decision based on a condition.</label>
+
+<h2>Which is the best description of an if statement?</h2>
+<label for="if_string"><input type="radio" name="ifstate" value="0" id="if_string" />Identifies a portion of a string.</label>
+<label for="if_join"><input type="radio" name="ifstate" value="0" id="if_join" />A method to join strings.</label>
+<label for="if_info"><input type="radio" name="ifstate" value="0" id="if_info" />Allows you to store information so it can be reused throughout the program</label>
+<label for="if_condition"><input type="radio" name="ifstate"  value="25" id="if_condition" />Allows you to make a decision based on a condition.</label>
+
+<button type="submit" value="Submit">Submit</button>
+
+</form>
+  
+<p>Your grade is: <span id="grade">__</span></p>
+<p id="grade2"></p>
+</div><!-- close main div -->
+  
+<script>
+document.getElementById("form1").onsubmit=function() {
+	variable = parseInt(document.querySelector('input[name = "variable"]:checked').value);
+	sub = parseInt(document.querySelector('input[name = "sub"]:checked').value);
+	con = parseInt(document.querySelector('input[name = "con"]:checked').value);
+	ifstate = parseInt(document.querySelector('input[name = "ifstate"]:checked').value);	   
+	   
+result = variable + sub + con + ifstate;
+	   
+document.getElementById("grade").innerHTML = result;
+	
+ grading = [
+	   {score:0,feedback:"I don't think you studied", image: "none.jpg"},
+	   {score:25,feedback:"You need to spend more time. Try again", image: "poor.jpg"},
+	   {score:50,feedback:"I think you could do better. Try again.", image: "avg.jpg"},
+	   {score:75,feedback:"So close. Try again.", image: "above.jpg"},
+	   {score:100,feedback:"Excellent! You're a JavaScript pro!", image: "excellent.jpg"}
+	   ];
+	  
+for(i=0; i<grading.length; i++) {
+    if(result == grading[i].score) {
+    result2 = grading[i].feedback + "<br /><img src='" + grading[i].image + "' width='300'  />";
+	  }
+	  }
+
+
+document.getElementById("grade2").innerHTML = result2; 
+	  
+return false; // required to not refresh the page; just leave this here
+} //this ends the submit function
 
 </script>
-	
-
-
+  
+</body>
 
 <!--footer-->
 <div class="footer">
