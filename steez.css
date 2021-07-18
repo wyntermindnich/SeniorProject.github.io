@@ -15,13 +15,13 @@ body{
 }
 
 .menu {
-  width: 25%;
+  width: 100%;
   padding: 25px;
   box-sizing: border-box;
 }
 
 .main {
-  width: 75%;
+  width: 95%;
   padding: 15px;
 }
 
