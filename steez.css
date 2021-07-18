@@ -52,7 +52,7 @@ h1{
   display: inline-block;
 }
 .answers label{
-  display: block;
+  display: list-item;
   margin-bottom: 10px;
 }
 button{
