@@ -27,23 +27,6 @@ li a:hover:not(.active) {
   background-color: #04AA6D;
 }
 
-ul.demo {
-  list-style-type: none;
-  margin: 10;
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
-.padded {
-    padding-top: 3px;
-    height:22px /* original height (25px) minus padding-top (3px) */
-    text-align: center;
-}
-
-a.one:link {color:#ff0000;}
-a.one:visited {color:#0000ff;}
-a.one:hover {color:#00ecff;}
-
 hr.rounded {
   border-top: 9px solid #0a2e47;
   border-radius: 15px;
