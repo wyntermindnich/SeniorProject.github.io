@@ -4,15 +4,13 @@ Displays a question with for possible clickable answers -->
 <!DOCTYPE html>
 <html>
 <head>
-		<title> Senior_Project </title>
-
-		<link rel="stylesheet" href="link.css">
-		<link rel="stylesheet" href="steez.css">
+	<title> Senior_Project </title>
+	<link rel="stylesheet" href="link.css">
+	<link rel="stylesheet" href="steez.css">
 </head>
 <body> 
 
 <!--header-->
-
 <div class="header">
 <h1> Senior Project Website. </h1>
 	<h2> Quiz </h2>
@@ -20,19 +18,15 @@ Displays a question with for possible clickable answers -->
 	
 <!--links to other pages-->
 <div class="menu">
-		<ul class="demo">  
-		<li> <a class="one" href="index.html" target="_self"> Home </a> </li>
-
-		<li> <a class="one" href="two.html" target="_self"> Concepts </a> </li>
-
-		<li> <a class="one" href="embed.html" target="_self"> Quiz </a> </li>
-		</ul>
-</ul>
+	<ul class="demo">  
+	<li> <a class="one" href="index.html" target="_self"> Home </a> </li>
+	<li> <a class="one" href="two.html" target="_self"> Concepts </a> </li>
+	<li> <a class="one" href="embed.html" target="_self"> Quiz </a> </li>
+	</ul>
 </div>
 	
 <div class="main"><!-- open main div -->
 <form id="form1">
-
 <h2>Which is the correct example of data structures?</h2>
 <p> <label for="var_string"><input type="radio" name="variable" value="0" id="var_string" />Array: Collection of nodes, Stack: LIFO, Queue: FIFO, Linked-list: Collection of data types</label> </p>
 <p> <label for="var_join"><input type="radio" name="variable" value="0" id="var_join" />Array: Collection of data types, Stack: FIFO, Queue: LIFO, Linked-list: Collection of nodes</label> </p>
@@ -64,7 +58,6 @@ Displays a question with for possible clickable answers -->
 <p>Your grade is: <span id="grade">__</span></p>
 <p id="grade2"></p>
 </div><!-- close main div -->
-
   
 <script>
 document.getElementById("form1").onsubmit=function() {
@@ -90,7 +83,6 @@ for(i=0; i<grading.length; i++) {
     result2 = grading[i].feedback + "<br /><img src='" + grading[i].image + "' width='300'  />";
 	  }
 	  }
-
 
 document.getElementById("grade2").innerHTML = result2; 
 	  
